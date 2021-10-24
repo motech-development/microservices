@@ -1,0 +1,17 @@
+{
+  "name": "@microservices/users",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "run -T nest start --watch"
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.1.1",
+    "@nestjs/core": "^8.1.1",
+    "@nestjs/platform-express": "^8.1.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.4.0"
+  },
+  "devDependencies": {
+    "source-map-support": "^0.5.20"
+  }
+}
