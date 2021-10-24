@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "types": ["@types/node"],
+    "noEmit": true
+  },
+  "extends": "./tsconfig.json",
+  "include": [
+    "__mocks__",
+    ".eslintrc.js",
+    "babel.config.js",
+    "commitlint.config.js",
+    "rollup.config.js"
+  ]
+}
