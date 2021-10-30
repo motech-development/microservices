@@ -1,13 +1,20 @@
 {
-  "name": "@microservices/users",
+  "name": "@service/users",
   "version": "0.0.0",
   "scripts": {
+    "generate": "run -T prisma generate",
+    "migrate": "run -T  prisma migrate dev",
     "start": "run -T nest start --watch"
   },
   "dependencies": {
     "@nestjs/common": "^8.1.1",
     "@nestjs/core": "^8.1.1",
+    "@nestjs/microservices": "^8.1.1",
     "@nestjs/platform-express": "^8.1.1",
+    "@package/prisma": "workspace:packages/prisma",
+    "@prisma/client": "^3.3.0",
+    "amqp-connection-manager": "^3.7.0",
+    "amqplib": "^0.8.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.4.0"
   },

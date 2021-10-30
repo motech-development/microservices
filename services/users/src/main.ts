@@ -1,9 +1,24 @@
 import { NestFactory } from '@nestjs/core';
-import AppModule from './app.module';
+import { Transport } from '@nestjs/microservices';
+import { ApiModule } from './api';
+import { ServiceModule } from './service';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  await app.listen(3000);
+  const api = await NestFactory.create(ApiModule);
+  const service = await NestFactory.createMicroservice(ServiceModule, {
+    options: {
+      queue: 'user_queue',
+      queueOptions: {
+        durable: false,
+      },
+      urls: ['amqp://localhost:5672'],
+    },
+    transport: Transport.RMQ,
+  });
+
+  await api.listen(3000);
+
+  await service.listen();
 }
 
 bootstrap().catch((err) => {

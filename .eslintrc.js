@@ -8,6 +8,15 @@ module.exports = {
     'plugin:jest/recommended',
     'prettier',
   ],
+  overrides: [
+    {
+      files: ['packages/*/rollup.config.js'],
+      rules: {
+        '@typescript-eslint/no-unsafe-call': 'off',
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: ['./tsconfig.eslint.json', './tsconfig.json'],

@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    networks:
+      - motech
+    ports:
+      - 3306:3306
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    networks:
+      - motech
+    ports:
+      - 5672:5672
+      - 15672:15672
+
+networks:
+  motech:
+    name: motech
