@@ -2,7 +2,7 @@ import { Injectable, OnModuleInit, OnModuleDestroy } from '@nestjs/common';
 import { PrismaClient } from '@prisma/client';
 
 /**
- * Prisma service for NestJS
+ * A NestJS service to interact with Prisma.
  */
 @Injectable()
 class PrismaService

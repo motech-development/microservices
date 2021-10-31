@@ -19,6 +19,7 @@ module.exports = {
     {
       files: ['**/__tests__/*.ts'],
       rules: {
+        '@typescript-eslint/unbound-method': 'off',
         'import/no-extraneous-dependencies': 'off',
       },
     },
