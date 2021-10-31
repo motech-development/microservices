@@ -1,6 +1,6 @@
 import { Controller } from '@nestjs/common';
 import { MessagePattern, Payload } from '@nestjs/microservices';
-import { IPaginated } from '@package/prisma';
+import { IPaginated, TPaginatedResult } from '@package/prisma';
 import { User } from '@prisma/client';
 import { ICreateUser, IUpdateUserMessage, UserService } from '../shared/user';
 
@@ -19,7 +19,9 @@ class ServiceController {
   }
 
   @MessagePattern('getUsers')
-  public async getUsers(@Payload() options: IPaginated): Promise<User[]> {
+  public async getUsers(
+    @Payload() options: IPaginated,
+  ): Promise<TPaginatedResult<User>> {
     return this.userService.getUsers(options);
   }
 

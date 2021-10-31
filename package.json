@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "commit": "cz",
-    "environment": "docker-compose up"
+    "environment": "docker-compose up",
+    "package": "yarn workspaces foreach -pt run package"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.16.0",

@@ -7,10 +7,11 @@ import {
   Param,
   Post,
   Put,
-  Query,
+  UseInterceptors,
 } from '@nestjs/common';
 import { ClientProxy } from '@nestjs/microservices';
-import { TOrder } from '@package/prisma';
+import { Pagination, PaginationInterceptor } from '@package/pagination';
+import { IPaginated, TPaginatedResult } from '@package/prisma';
 import { User } from '@prisma/client';
 import { Observable } from 'rxjs';
 import { ICreateUser, IUpdateUser } from '../shared/user';
@@ -30,16 +31,11 @@ class ApiController {
   }
 
   @Get()
+  @UseInterceptors(PaginationInterceptor)
   public getUsers(
-    @Query('orderBy') orderBy?: TOrder,
-    @Query('skip') skip?: number,
-    @Query('take') take?: number,
-  ): Observable<User[]> {
-    return this.client.send<User[]>('getUsers', {
-      orderBy,
-      skip,
-      take,
-    });
+    @Pagination() options: IPaginated,
+  ): Observable<TPaginatedResult<User>> {
+    return this.client.send<TPaginatedResult<User>>('getUsers', options);
   }
 
   @Delete(':id')

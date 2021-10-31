@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { User } from '@prisma/client';
-import { IPaginated, PrismaService } from '@package/prisma';
+import { IPaginated, PrismaService, TPaginatedResult } from '@package/prisma';
 import { ICreateUser, IUpdateUser } from './user.interface';
 
 @Injectable()
@@ -21,16 +21,17 @@ class UserService {
     });
   }
 
-  public async getUsers(options: IPaginated): Promise<User[]> {
+  public async getUsers(options: IPaginated): Promise<TPaginatedResult<User>> {
     const { orderBy, skip, take } = options;
 
-    return this.prismaService.user.findMany({
-      orderBy: {
-        email: orderBy,
-      },
-      skip,
-      take,
-    });
+    return this.prismaService.$transaction([
+      this.prismaService.user.count(),
+      this.prismaService.user.findMany({
+        orderBy,
+        skip,
+        take,
+      }),
+    ]);
   }
 
   public async removeUser(id: string): Promise<User> {
