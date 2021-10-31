@@ -11,10 +11,12 @@
     "build": "run prebuild && run -T rollup -c && run postbuild",
     "package": "run build",
     "postbuild": "run -T tsc --project tsconfig.build.json --emitDeclarationOnly",
-    "prebuild": "run -T rimraf ./lib"
+    "prebuild": "run -T rimraf ./lib",
+    "test": "run -T jest --watch"
   },
   "dependencies": {
     "@nestjs/common": "^8.1.1",
+    "@nestjs/core": "^8.1.1",
     "express": "^4.17.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.4.0"

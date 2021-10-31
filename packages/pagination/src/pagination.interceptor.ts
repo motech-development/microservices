@@ -9,8 +9,20 @@ import { Request } from 'express';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import PaginationEnum from './pagination.enum';
-import { IPaginatedResult } from './pagination.interface';
 import { calculatePages, calculateTake } from './pagination.utils';
+
+export interface IPaginatedResult<T> {
+  /** List of items returned. */
+  items: T[];
+  /** Maximum number of items to be returned. */
+  limit: number;
+  /** Current page number. */
+  page: number;
+  /** Total number of pages available. */
+  pages: number;
+  /** Total number of items available. */
+  total: number;
+}
 
 /**
  * Transforms response into a paginated response.

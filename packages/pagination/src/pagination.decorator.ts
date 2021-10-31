@@ -1,21 +1,40 @@
 import { createParamDecorator, ExecutionContext } from '@nestjs/common';
+import { CustomParamFactory } from '@nestjs/common/interfaces';
 import { Request } from 'express';
 import PaginationEnum from './pagination.enum';
 import {
   calculateOrderBy,
   calculateSkip,
   calculateTake,
+  ICalculateOrderBy,
 } from './pagination.utils';
 
+export interface IPaginationDecorator {
+  /** Ordering object. */
+  orderBy: ICalculateOrderBy;
+  /** Number of items to skip. */
+  skip: number;
+  /** Number of items to take. */
+  take: number;
+}
+
 /**
- * Pagination decorator. Generates paginated query from query params.
+ * Pagination decorator factory.
+ *
+ * @param _ - Decorator data.
+ * @param ctx - Execution context.
+ * @returns Pagination query object.
  */
-const Pagination = createParamDecorator<unknown, ExecutionContext>((_, ctx) => {
+export const paginationFactory: CustomParamFactory<
+  unknown,
+  ExecutionContext,
+  IPaginationDecorator
+> = (_, ctx) => {
   const { query } = ctx.switchToHttp().getRequest<Request>();
   const {
     dir = PaginationEnum.Desc,
-    page = PaginationEnum.Page,
     limit = PaginationEnum.Size,
+    page = PaginationEnum.Page,
     sortBy,
   } = query;
   const take = calculateTake(limit);
@@ -27,6 +46,15 @@ const Pagination = createParamDecorator<unknown, ExecutionContext>((_, ctx) => {
     skip,
     take,
   };
-});
+};
+
+/**
+ * Pagination decorator. Generates paginated query from query params.
+ */
+const Pagination = createParamDecorator<
+  unknown,
+  ExecutionContext,
+  IPaginationDecorator
+>(paginationFactory);
 
 export default Pagination;
