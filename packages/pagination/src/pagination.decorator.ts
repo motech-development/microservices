@@ -9,6 +9,7 @@ import {
   ICalculateOrderBy,
 } from './pagination.utils';
 
+/** Paginated query object. */
 export interface IPaginationDecorator {
   /** Ordering object. */
   orderBy: ICalculateOrderBy;

@@ -33,6 +33,7 @@ export const calculateSkip = (page: unknown, take: number): number => {
   return take * (value - 1);
 };
 
+/** Ordering object. */
 export interface ICalculateOrderBy {
   /** Property to order by */
   [name: string]: unknown;

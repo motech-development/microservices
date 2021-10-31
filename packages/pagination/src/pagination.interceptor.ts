@@ -11,6 +11,7 @@ import { map } from 'rxjs/operators';
 import PaginationEnum from './pagination.enum';
 import { calculatePages, calculateTake } from './pagination.utils';
 
+/** Paginated result DTO. */
 export interface IPaginatedResult<T> {
   /** List of items returned. */
   items: T[];
