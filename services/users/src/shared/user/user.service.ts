@@ -1,13 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { User } from '@prisma/client';
 import { IPaginated, PrismaService, TPaginatedResult } from '@package/prisma';
-import { ICreateUser, IUpdateUser } from './user.interface';
+import { CreateUser, UpdateUser } from './user.models';
 
 @Injectable()
 class UserService {
   constructor(private readonly prismaService: PrismaService) {}
 
-  public async createUser(data: ICreateUser): Promise<User> {
+  public async createUser(data: CreateUser): Promise<User> {
     return this.prismaService.user.create({
       data,
     });
@@ -42,7 +42,7 @@ class UserService {
     });
   }
 
-  public async updateUser(id: string, data: IUpdateUser): Promise<User> {
+  public async updateUser(id: string, data: UpdateUser): Promise<User> {
     return this.prismaService.user.update({
       data,
       where: {

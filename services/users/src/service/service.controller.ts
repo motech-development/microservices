@@ -1,15 +1,16 @@
 import { Controller } from '@nestjs/common';
 import { MessagePattern, Payload } from '@nestjs/microservices';
+import { IMessageOutput } from '@package/messages';
 import { IPaginated, TPaginatedResult } from '@package/prisma';
 import { User } from '@prisma/client';
-import { ICreateUser, IUpdateUserMessage, UserService } from '../shared/user';
+import { CreateUser, UpdateUser, UserService } from '../shared/user';
 
 @Controller()
 class ServiceController {
   constructor(private readonly userService: UserService) {}
 
   @MessagePattern('createUser')
-  public async createUser(@Payload() user: ICreateUser): Promise<User> {
+  public async createUser(@Payload() user: CreateUser): Promise<User> {
     return this.userService.createUser(user);
   }
 
@@ -32,7 +33,7 @@ class ServiceController {
 
   @MessagePattern('updateUser')
   public async updateUser(
-    @Payload() { data, id }: IUpdateUserMessage,
+    @Payload() { data, id }: IMessageOutput<UpdateUser>,
   ): Promise<User> {
     return this.userService.updateUser(id, data);
   }

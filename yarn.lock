@@ -2324,6 +2324,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@package/messages@workspace:packages/messages":
+  version: 0.0.0-use.local
+  resolution: "@package/messages@workspace:packages/messages"
+  languageName: unknown
+  linkType: soft
+
 "@package/pagination@workspace:packages/pagination":
   version: 0.0.0-use.local
   resolution: "@package/pagination@workspace:packages/pagination"
@@ -2447,11 +2453,14 @@ __metadata:
     "@nestjs/core": ^8.1.1
     "@nestjs/microservices": ^8.1.1
     "@nestjs/platform-express": ^8.1.1
+    "@package/messages": "workspace:packages/messages"
     "@package/pagination": "workspace:packages/pagination"
     "@package/prisma": "workspace:packages/prisma"
     "@prisma/client": ^3.3.0
     amqp-connection-manager: ^3.7.0
     amqplib: ^0.8.0
+    class-transformer: ^0.4.0
+    class-validator: ^0.13.1
     reflect-metadata: ^0.1.13
     rxjs: ^7.4.0
     source-map-support: ^0.5.20
@@ -2835,6 +2844,13 @@ __metadata:
   version: 1.0.0
   resolution: "@types/treeify@npm:1.0.0"
   checksum: 1b2397030d13beee7f82b878ca80feeddb0d550a6b00d8be30082a370c0ac5985ecf7b9378cf93ea278ff00c3e900b416ae8d9379f2c7e8caecdece1dfc77380
+  languageName: node
+  linkType: hard
+
+"@types/validator@npm:^13.1.3":
+  version: 13.6.6
+  resolution: "@types/validator@npm:13.6.6"
+  checksum: cae90ccbb067640bbed2c233b6393b986529fc9b695a04516708354a5df5419cb0f588e5dd4c8a0c6127402d38d060519b9738ab8aab80f70bc92a6b354a43da
   languageName: node
   linkType: hard
 
@@ -4270,6 +4286,24 @@ __metadata:
   version: 1.2.2
   resolution: "cjs-module-lexer@npm:1.2.2"
   checksum: 977f3f042bd4f08e368c890d91eecfbc4f91da0bc009a3c557bc4dfbf32022ad1141244ac1178d44de70fc9f3dea7add7cd9a658a34b9fae98a55d8f92331ce5
+  languageName: node
+  linkType: hard
+
+"class-transformer@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "class-transformer@npm:0.4.0"
+  checksum: 4057346b512705b1a5a68025b025a5be1ff847d7e0e76e82bbb937f832cf6235c5f66e874487d4bd35d67401411e8a3279c9d36bdd8c800336d5507ee6e94af0
+  languageName: node
+  linkType: hard
+
+"class-validator@npm:^0.13.1":
+  version: 0.13.1
+  resolution: "class-validator@npm:0.13.1"
+  dependencies:
+    "@types/validator": ^13.1.3
+    libphonenumber-js: ^1.9.7
+    validator: ^13.5.2
+  checksum: 1d77f869792e83baef67d18220baf1e1a413a43efbd454ed359e0da691462e6d7d869e73de3ce5bb4a67206084338e5e4323e9e54dd8bc967c6fadb4e9ac44c2
   languageName: node
   linkType: hard
 
@@ -7829,6 +7863,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"libphonenumber-js@npm:^1.9.7":
+  version: 1.9.39
+  resolution: "libphonenumber-js@npm:1.9.39"
+  checksum: 5bbcf48ca08d1500c3e9bbe712643cad9b7fba796e7cdeaa961ef887475f988623c7f82a270ab3edf8a2c44ed520616ef94a556971628df2a55ca056bf718f62
+  languageName: node
+  linkType: hard
+
 "lilconfig@npm:^2.0.3":
   version: 2.0.3
   resolution: "lilconfig@npm:2.0.3"
@@ -10974,6 +11015,13 @@ typescript@4.3.5:
     spdx-correct: ^3.0.0
     spdx-expression-parse: ^3.0.0
   checksum: 35703ac889d419cf2aceef63daeadbe4e77227c39ab6287eeb6c1b36a746b364f50ba22e88591f5d017bc54685d8137bc2d328d0a896e4d3fd22093c0f32a9ad
+  languageName: node
+  linkType: hard
+
+"validator@npm:^13.5.2":
+  version: 13.7.0
+  resolution: "validator@npm:13.7.0"
+  checksum: 2b83283de1222ca549a7ef57f46e8d49c6669213348db78b7045bce36a3b5843ff1e9f709ebf74574e06223461ee1f264f8cc9a26a0060a79a27de079d8286ef
   languageName: node
   linkType: hard
 

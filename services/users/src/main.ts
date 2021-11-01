@@ -1,3 +1,4 @@
+import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { Transport } from '@nestjs/microservices';
 import { ApiModule } from './api';
@@ -15,6 +16,8 @@ async function bootstrap() {
     },
     transport: Transport.RMQ,
   });
+
+  api.useGlobalPipes(new ValidationPipe());
 
   await api.listen(3000);
 

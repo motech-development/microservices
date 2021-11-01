@@ -32,6 +32,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'jest'],
   root: true,
   rules: {
+    'max-classes-per-file': ['error', 4],
     'sort-keys': [
       'error',
       'asc',
