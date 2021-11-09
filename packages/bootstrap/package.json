@@ -1,0 +1,22 @@
+{
+  "name": "@package/bootstrap",
+  "version": "0.0.0",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "run prebuild && run -T rollup -c && run postbuild",
+    "package": "run build",
+    "postbuild": "run -T tsc --project tsconfig.build.json --emitDeclarationOnly",
+    "prebuild": "run -T rimraf ./lib",
+    "test": "run -T jest --watch"
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.1.1",
+    "@nestjs/core": "^8.1.1",
+    "@package/logger": "workspace:packages/logger"
+  }
+}
