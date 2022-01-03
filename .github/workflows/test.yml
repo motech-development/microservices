@@ -1,0 +1,99 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  label:
+    name: Label PR
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/labeler@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+  packages:
+    name: Test @package/${{ matrix.packages }}
+
+    runs-on: ${{ matrix.packages }}
+
+    strategy:
+      matrix:
+        packages:
+          - messages
+          - pagination
+          - prisma
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+
+      - name: Set Node version
+        uses: actions/setup-node@v2.5.1
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build packages
+        run: yarn package
+
+      # TODO: Enable linting
+      # - name: Run linter
+      #   run: yarn workspace @packages/${{ matrix.packages }} lint
+
+      - name: Run tests
+        run: yarn workspace @package/${{ matrix.packages }} test --coverage
+
+      # TODO: Send results to SonarQube
+
+  services:
+    name: Test @service/${{ matrix.packages }}
+
+    runs-on: ${{ matrix.services }}
+
+    needs: packages
+
+    strategy:
+      matrix:
+        services:
+          - users
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+
+      - name: Set Node version
+        uses: actions/setup-node@v2.5.1
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build packages
+        run: yarn package
+
+      # TODO: Enable linting
+      # - name: Run linter
+      #   run: yarn workspace @service/${{ matrix.packages }} lint
+
+      # TODO: Enable tests
+      # - name: Run tests
+      #   run: yarn workspace @service/${{ matrix.packages }} test
+
+      # TODO: Send results to SonarQube
+
+      # TODO: Integration tests
+
+      - name: Generate schema
+        run: yarn workspace @service/${{ matrix.packages }} generate
+
+      # TODO: Build application
