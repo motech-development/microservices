@@ -2,9 +2,9 @@
   "name": "@service/users",
   "version": "0.0.0",
   "scripts": {
-    "generate": "run -T prisma generate",
-    "migrate": "run -T  prisma migrate dev",
-    "start": "run -T nest start --watch"
+    "generate": "prisma generate",
+    "migrate": "prisma migrate dev",
+    "start": "nest start --watch"
   },
   "dependencies": {
     "@nestjs/common": "8.1.1",
@@ -23,6 +23,12 @@
     "rxjs": "7.4.0"
   },
   "devDependencies": {
+    "@nestjs/cli": "8.1.4",
+    "@nestjs/schematics": "8.0.4",
+    "@nestjs/testing": "8.1.2",
+    "@types/jest": "27.0.2",
+    "jest": "27.3.1",
+    "prisma": "3.3.0",
     "source-map-support": "0.5.20"
   }
 }
