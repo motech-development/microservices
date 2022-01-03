@@ -8,12 +8,12 @@
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "run prebuild && run -T rollup -c && run postbuild",
+    "build": "run prebuild && rollup -c && run postbuild",
     "package": "run build",
     "postbuild": "run -T tsc --project tsconfig.build.json --emitDeclarationOnly",
     "prebuild": "run -T rimraf ./lib",
-    "test": "run -T jest --watch",
-    "test-ci": "run -T jest --coverage"
+    "test": "jest --watch",
+    "test-ci": "jest --coverage"
   },
   "dependencies": {
     "@nestjs/common": "^8.1.1",
@@ -23,6 +23,20 @@
     "rxjs": "^7.4.0"
   },
   "devDependencies": {
-    "@types/express": "4.17.13"
+    "@babel/core": "7.16.0",
+    "@babel/plugin-proposal-decorators": "7.16.0",
+    "@babel/plugin-transform-runtime": "7.16.0",
+    "@babel/preset-env": "7.16.0",
+    "@babel/preset-typescript": "7.16.0",
+    "@nestjs/testing": "8.1.2",
+    "@rollup/plugin-babel": "5.3.0",
+    "@rollup/plugin-commonjs": "21.0.1",
+    "@rollup/plugin-node-resolve": "13.0.6",
+    "@types/express": "4.17.13",
+    "@types/jest": "27.0.2",
+    "jest": "27.3.1",
+    "jest-marbles": "3.0.1",
+    "rollup": "2.58.3",
+    "rollup-plugin-exclude-dependencies-from-bundle": "1.1.20"
   }
 }
