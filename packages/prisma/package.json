@@ -14,7 +14,7 @@
     "postbuild": "run -T tsc --project tsconfig.build.json --emitDeclarationOnly",
     "prebuild": "run -T rimraf ./lib",
     "test": "jest --watch",
-    "test-ci": "jest --coverage"
+    "test-ci": "run generate && jest --coverage"
   },
   "dependencies": {
     "@nestjs/common": "^8.1.1",
