@@ -49,7 +49,7 @@ jobs:
       #   run: yarn workspace @packages/${{ matrix.packages }} lint
 
       - name: Run tests
-        run: yarn workspace @package/${{ matrix.packages }} test --coverage
+        run: yarn workspace @package/${{ matrix.packages }} test-ci
 
       # TODO: Send results to SonarQube
 
@@ -87,7 +87,7 @@ jobs:
 
       # TODO: Enable tests
       # - name: Run tests
-      #   run: yarn workspace @service/${{ matrix.packages }} test
+      #   run: yarn workspace @service/${{ matrix.packages }} test-ci
 
       # TODO: Send results to SonarQube
 
