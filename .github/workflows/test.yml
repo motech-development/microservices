@@ -54,7 +54,7 @@ jobs:
       # TODO: Send results to SonarQube
 
   services:
-    name: Test @service/${{ matrix.packages }}
+    name: Test @service/${{ matrix.services }}
 
     runs-on: ubuntu-latest
 
@@ -83,17 +83,17 @@ jobs:
 
       # TODO: Enable linting
       # - name: Run linter
-      #   run: yarn workspace @service/${{ matrix.packages }} lint
+      #   run: yarn workspace @service/${{ matrix.services }} lint
 
       # TODO: Enable tests
       # - name: Run tests
-      #   run: yarn workspace @service/${{ matrix.packages }} test-ci
+      #   run: yarn workspace @service/${{ matrix.services }} test-ci
 
       # TODO: Send results to SonarQube
 
       # TODO: Integration tests
 
       - name: Generate schema
-        run: yarn workspace @service/${{ matrix.packages }} generate
+        run: yarn workspace @service/${{ matrix.services }} generate
 
       # TODO: Build application
