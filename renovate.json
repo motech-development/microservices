@@ -1,5 +1,9 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "prCreation": "not-pending",
+  "rebaseWhen": "behind-base-branch",
+  "stabilityDays": 30,
+  "timezone": "Europe/London"
 }
