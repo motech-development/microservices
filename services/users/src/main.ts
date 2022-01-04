@@ -1,30 +1,28 @@
-import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { Transport } from '@nestjs/microservices';
+import { bootstrap } from '@package/bootstrap';
 import { ApiModule } from './api';
 import { ServiceModule } from './service';
 
-async function bootstrap() {
-  const api = await NestFactory.create(ApiModule);
-  const service = await NestFactory.createMicroservice(ServiceModule, {
-    options: {
-      queue: 'user_queue',
-      queueOptions: {
-        durable: false,
-      },
-      urls: ['amqp://localhost:5672'],
-    },
-    transport: Transport.RMQ,
-  });
-
-  api.useGlobalPipes(new ValidationPipe());
-
-  await api.listen(3000);
-
-  await service.listen();
-}
-
-bootstrap().catch((err) => {
-  // eslint-disable-next-line no-console
-  console.error(err);
+const api = NestFactory.create(ApiModule, {
+  bufferLogs: true,
 });
+const service = NestFactory.createMicroservice(ServiceModule, {
+  bufferLogs: true,
+  options: {
+    queue: 'user_queue',
+    queueOptions: {
+      durable: false,
+    },
+    urls: ['amqp://localhost:5672'],
+  },
+  transport: Transport.RMQ,
+});
+
+bootstrap(
+  {
+    api,
+    service,
+  },
+  3000,
+);

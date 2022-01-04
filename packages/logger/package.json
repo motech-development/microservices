@@ -1,5 +1,5 @@
 {
-  "name": "@package/bootstrap",
+  "name": "@package/logger",
   "version": "0.0.0",
   "files": [
     "lib"
@@ -17,10 +17,11 @@
   },
   "dependencies": {
     "@nestjs/common": "^8.1.1",
-    "@nestjs/core": "^8.1.1",
-    "@package/logger": "workspace:packages/logger",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "reflect-metadata": "0.1.13",
-    "rxjs": "7.4.0"
+    "rxjs": "7.4.0",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "@babel/core": "7.16.0",
@@ -31,7 +32,9 @@
     "@rollup/plugin-babel": "5.3.0",
     "@rollup/plugin-commonjs": "21.0.1",
     "@rollup/plugin-node-resolve": "13.0.6",
+    "@types/express": "^4.17.13",
     "@types/jest": "27.0.2",
+    "@types/morgan": "^1",
     "jest": "27.3.1",
     "rollup": "2.58.3",
     "rollup-plugin-exclude-dependencies-from-bundle": "1.1.20"

@@ -24,6 +24,8 @@ jobs:
     strategy:
       matrix:
         packages:
+          - bootstrap
+          - logger
           - messages
           - pagination
           - prisma
