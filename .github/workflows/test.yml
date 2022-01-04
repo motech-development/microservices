@@ -62,7 +62,7 @@ jobs:
         run: yarn workspace @package/${{ matrix.packages }} test-ci
 
       - name: Set SonarCloud Token
-        run: echo "SONAR_TOKEN_NAME=SONAR_TOKEN_PACKAGES_${ matrix.packages }" >> $GITHUB_ENV
+        run: echo "SONAR_TOKEN_NAME=SONAR_TOKEN_PACKAGES_${{ matrix.packages }}" >> $GITHUB_ENV
 
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
