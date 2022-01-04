@@ -1,9 +1,15 @@
 name: Test
 
 on:
-  pull_request:
+  push:
     branches:
       - main
+
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
 
 jobs:
   label:
@@ -33,6 +39,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.4.0
+        with:
+          fetch-depth: 0
 
       - name: Set Node version
         uses: actions/setup-node@v2.5.1
@@ -53,7 +61,14 @@ jobs:
       - name: Run tests
         run: yarn workspace @package/${{ matrix.packages }} test-ci
 
-      # TODO: Send results to SonarQube
+      - name: Set SonarCloud Token
+        run: echo "::set-env name=SONAR_TOKEN_NAME::SONAR_TOKEN_PACKAGES_${{ matrix.packages^^ }}"
+
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets[env.SONAR_TOKEN_NAME] }}
 
   services:
     name: Test @service/${{ matrix.services }}
@@ -70,6 +85,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.4.0
+        with:
+          fetch-depth: 0
 
       - name: Set Node version
         uses: actions/setup-node@v2.5.1
@@ -83,6 +100,9 @@ jobs:
       - name: Build packages
         run: yarn package
 
+      - name: Generate schema
+        run: yarn workspace @service/${{ matrix.services }} generate
+
       # TODO: Enable linting
       # - name: Run linter
       #   run: yarn workspace @service/${{ matrix.services }} lint
@@ -94,8 +114,5 @@ jobs:
       # TODO: Send results to SonarQube
 
       # TODO: Integration tests
-
-      - name: Generate schema
-        run: yarn workspace @service/${{ matrix.services }} generate
 
       # TODO: Build application
