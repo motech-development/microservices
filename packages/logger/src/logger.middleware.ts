@@ -15,9 +15,14 @@ class LoggerMiddleware implements NestMiddleware<Request, Response> {
    */
   private readonly logger = new Logger();
 
-  public write(message: string): void {
+  /**
+   * Write log message.
+   *
+   * @param message - Message to be logged.
+   */
+  public write = (message: string): void => {
     this.logger.http(message);
-  }
+  };
 
   /**
    * Express middlware.
@@ -29,9 +34,7 @@ class LoggerMiddleware implements NestMiddleware<Request, Response> {
   public use(req: Request, res: Response, next: NextFunction): void {
     morgan('combined', {
       stream: {
-        write: (message) => {
-          this.logger.http(message);
-        },
+        write: this.write,
       },
     })(req, res, next);
   }

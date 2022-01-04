@@ -1,9 +1,12 @@
 import { Test } from '@nestjs/testing';
 import { Request, Response } from 'express';
 import morgan from 'morgan';
+import Logger from '../logger';
 import LoggerMiddleware from '../logger.middleware';
 
 const mockCallback = jest.fn();
+
+jest.mock('../logger');
 
 jest.mock('morgan', () => jest.fn().mockImplementation(() => mockCallback));
 
@@ -33,9 +36,15 @@ describe('logger.middleware', () => {
     expect(morgan).toHaveBeenLastCalledWith('combined', {
       stream: {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-        write: expect.any(Function),
+        write: loggerMiddleware.write,
       },
     });
     expect(mockCallback).toHaveBeenCalledWith(request, response, next);
+  });
+
+  it('should correctly log a message when written', () => {
+    loggerMiddleware.write('Test');
+
+    expect(Logger.prototype.http).toHaveBeenLastCalledWith('Test');
   });
 });
