@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ClientsModule, Transport } from '@nestjs/microservices';
+import { LoggerModule } from '@package/logger';
 import { PaginationModule } from '@package/pagination';
 import ApiController from './api.controller';
 
@@ -19,6 +20,7 @@ import ApiController from './api.controller';
         transport: Transport.RMQ,
       },
     ]),
+    LoggerModule,
     PaginationModule,
   ],
 })
