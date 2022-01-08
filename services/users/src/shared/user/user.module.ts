@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { PrismaModule } from '@package/prisma';
+import { PrismaModule } from '@motech-development/prisma';
 import UserService from './user.service';
 
 @Module({

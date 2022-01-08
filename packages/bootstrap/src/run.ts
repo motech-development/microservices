@@ -3,7 +3,7 @@ import {
   INestMicroservice,
   ValidationPipe,
 } from '@nestjs/common';
-import { Logger } from '@package/logger';
+import { Logger } from '@motech-development/logger';
 
 /** Application bootstrap options. */
 export interface IApplications {

@@ -1,5 +1,5 @@
 {
-  "name": "@package/prisma",
+  "name": "@motech-development/prisma",
   "version": "0.0.0",
   "files": [
     "lib"

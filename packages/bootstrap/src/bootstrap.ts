@@ -1,4 +1,4 @@
-import { Logger } from '@package/logger';
+import { Logger } from '@motech-development/logger';
 import { IApplications, run } from './run';
 
 export const logger = new Logger();

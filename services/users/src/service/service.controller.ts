@@ -1,7 +1,7 @@
 import { Controller } from '@nestjs/common';
 import { MessagePattern, Payload } from '@nestjs/microservices';
-import { IMessageOutput } from '@package/messages';
-import { IPaginated, TPaginatedResult } from '@package/prisma';
+import { IMessageOutput } from '@motech-development/messages';
+import { IPaginated, TPaginatedResult } from '@motech-development/prisma';
 import { User } from '@prisma/client';
 import { CreateUser, UpdateUser, UserService } from '../shared/user';
 
