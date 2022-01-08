@@ -1,5 +1,5 @@
 {
-  "name": "@package/logger",
+  "name": "@motech-development/logger",
   "version": "0.0.0",
   "files": [
     "lib"

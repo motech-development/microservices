@@ -1,5 +1,5 @@
 {
-  "name": "@package/messages",
+  "name": "@motech-development/messages",
   "version": "0.0.0",
   "files": [
     "lib"

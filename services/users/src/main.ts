@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { Transport } from '@nestjs/microservices';
-import { bootstrap } from '@package/bootstrap';
+import { bootstrap } from '@motech-development/bootstrap';
 import { ApiModule } from './api';
 import { ServiceModule } from './service';
 

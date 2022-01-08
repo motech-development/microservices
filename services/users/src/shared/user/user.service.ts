@@ -1,6 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { User } from '@prisma/client';
-import { IPaginated, PrismaService, TPaginatedResult } from '@package/prisma';
+import {
+  IPaginated,
+  PrismaService,
+  TPaginatedResult,
+} from '@motech-development/prisma';
 import { CreateUser, UpdateUser } from './user.models';
 
 @Injectable()

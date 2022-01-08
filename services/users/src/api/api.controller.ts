@@ -10,9 +10,12 @@ import {
   UseInterceptors,
 } from '@nestjs/common';
 import { ClientProxy } from '@nestjs/microservices';
-import { message } from '@package/messages';
-import { Pagination, PaginationInterceptor } from '@package/pagination';
-import { IPaginated, TPaginatedResult } from '@package/prisma';
+import { message } from '@motech-development/messages';
+import {
+  Pagination,
+  PaginationInterceptor,
+} from '@motech-development/pagination';
+import { IPaginated, TPaginatedResult } from '@motech-development/prisma';
 import { User } from '@prisma/client';
 import { Observable } from 'rxjs';
 import { CreateUser, UpdateUser } from '../shared/user';

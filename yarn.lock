@@ -2319,6 +2319,131 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@motech-development/bootstrap@workspace:packages/bootstrap":
+  version: 0.0.0-use.local
+  resolution: "@motech-development/bootstrap@workspace:packages/bootstrap"
+  dependencies:
+    "@babel/core": 7.16.0
+    "@babel/plugin-proposal-decorators": 7.16.0
+    "@babel/plugin-transform-runtime": 7.16.0
+    "@babel/preset-env": 7.16.0
+    "@babel/preset-typescript": 7.16.0
+    "@motech-development/logger": "workspace:packages/logger"
+    "@nestjs/common": ^8.1.1
+    "@nestjs/core": ^8.1.1
+    "@rollup/plugin-babel": 5.3.0
+    "@rollup/plugin-commonjs": 21.0.1
+    "@rollup/plugin-node-resolve": 13.0.6
+    "@types/jest": 27.0.2
+    jest: 27.3.1
+    reflect-metadata: 0.1.13
+    rollup: 2.58.3
+    rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
+    rxjs: 7.4.0
+  languageName: unknown
+  linkType: soft
+
+"@motech-development/logger@workspace:packages/logger":
+  version: 0.0.0-use.local
+  resolution: "@motech-development/logger@workspace:packages/logger"
+  dependencies:
+    "@babel/core": 7.16.0
+    "@babel/plugin-proposal-decorators": 7.16.0
+    "@babel/plugin-transform-runtime": 7.16.0
+    "@babel/preset-env": 7.16.0
+    "@babel/preset-typescript": 7.16.0
+    "@nestjs/common": ^8.1.1
+    "@nestjs/core": ^8.1.1
+    "@nestjs/testing": 8.1.2
+    "@rollup/plugin-babel": 5.3.0
+    "@rollup/plugin-commonjs": 21.0.1
+    "@rollup/plugin-node-resolve": 13.0.6
+    "@types/express": ^4.17.13
+    "@types/jest": 27.0.2
+    "@types/morgan": ^1
+    express: ^4.17.1
+    jest: 27.3.1
+    morgan: ^1.10.0
+    reflect-metadata: 0.1.13
+    rollup: 2.58.3
+    rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
+    rxjs: 7.4.0
+    winston: ^3.3.3
+  languageName: unknown
+  linkType: soft
+
+"@motech-development/messages@workspace:packages/messages":
+  version: 0.0.0-use.local
+  resolution: "@motech-development/messages@workspace:packages/messages"
+  dependencies:
+    "@babel/core": 7.16.0
+    "@babel/plugin-proposal-decorators": 7.16.0
+    "@babel/plugin-transform-runtime": 7.16.0
+    "@babel/preset-env": 7.16.0
+    "@babel/preset-typescript": 7.16.0
+    "@rollup/plugin-babel": 5.3.0
+    "@rollup/plugin-commonjs": 21.0.1
+    "@rollup/plugin-node-resolve": 13.0.6
+    "@types/jest": 27.0.2
+    jest: 27.3.1
+    rollup: 2.58.3
+    rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
+  languageName: unknown
+  linkType: soft
+
+"@motech-development/pagination@workspace:packages/pagination":
+  version: 0.0.0-use.local
+  resolution: "@motech-development/pagination@workspace:packages/pagination"
+  dependencies:
+    "@babel/core": 7.16.0
+    "@babel/plugin-proposal-decorators": 7.16.0
+    "@babel/plugin-transform-runtime": 7.16.0
+    "@babel/preset-env": 7.16.0
+    "@babel/preset-typescript": 7.16.0
+    "@nestjs/common": ^8.1.1
+    "@nestjs/core": ^8.1.1
+    "@nestjs/testing": 8.1.2
+    "@rollup/plugin-babel": 5.3.0
+    "@rollup/plugin-commonjs": 21.0.1
+    "@rollup/plugin-node-resolve": 13.0.6
+    "@types/express": 4.17.13
+    "@types/jest": 27.0.2
+    express: ^4.17.1
+    jest: 27.3.1
+    jest-marbles: 3.0.1
+    reflect-metadata: ^0.1.13
+    rollup: 2.58.3
+    rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
+    rxjs: ^7.4.0
+  languageName: unknown
+  linkType: soft
+
+"@motech-development/prisma@workspace:packages/prisma":
+  version: 0.0.0-use.local
+  resolution: "@motech-development/prisma@workspace:packages/prisma"
+  dependencies:
+    "@babel/core": 7.16.0
+    "@babel/plugin-proposal-decorators": 7.16.0
+    "@babel/plugin-transform-runtime": 7.16.0
+    "@babel/preset-env": 7.16.0
+    "@babel/preset-typescript": 7.16.0
+    "@nestjs/common": ^8.1.1
+    "@nestjs/core": ^8.1.1
+    "@nestjs/testing": 8.1.2
+    "@prisma/client": ^3.3.0
+    "@rollup/plugin-babel": 5.3.0
+    "@rollup/plugin-commonjs": 21.0.1
+    "@rollup/plugin-node-resolve": 13.0.6
+    "@types/jest": 27.0.2
+    jest: 27.3.1
+    prisma: 3.3.0
+    reflect-metadata: ^0.1.13
+    rollup: 2.58.3
+    rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
+    rxjs: ^7.4.0
+  languageName: unknown
+  linkType: soft
+
 "@nestjs/cli@npm:8.1.4":
   version: 8.1.4
   resolution: "@nestjs/cli@npm:8.1.4"
@@ -2873,131 +2998,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@package/bootstrap@workspace:packages/bootstrap":
-  version: 0.0.0-use.local
-  resolution: "@package/bootstrap@workspace:packages/bootstrap"
-  dependencies:
-    "@babel/core": 7.16.0
-    "@babel/plugin-proposal-decorators": 7.16.0
-    "@babel/plugin-transform-runtime": 7.16.0
-    "@babel/preset-env": 7.16.0
-    "@babel/preset-typescript": 7.16.0
-    "@nestjs/common": ^8.1.1
-    "@nestjs/core": ^8.1.1
-    "@package/logger": "workspace:packages/logger"
-    "@rollup/plugin-babel": 5.3.0
-    "@rollup/plugin-commonjs": 21.0.1
-    "@rollup/plugin-node-resolve": 13.0.6
-    "@types/jest": 27.0.2
-    jest: 27.3.1
-    reflect-metadata: 0.1.13
-    rollup: 2.58.3
-    rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
-    rxjs: 7.4.0
-  languageName: unknown
-  linkType: soft
-
-"@package/logger@workspace:packages/logger":
-  version: 0.0.0-use.local
-  resolution: "@package/logger@workspace:packages/logger"
-  dependencies:
-    "@babel/core": 7.16.0
-    "@babel/plugin-proposal-decorators": 7.16.0
-    "@babel/plugin-transform-runtime": 7.16.0
-    "@babel/preset-env": 7.16.0
-    "@babel/preset-typescript": 7.16.0
-    "@nestjs/common": ^8.1.1
-    "@nestjs/core": ^8.1.1
-    "@nestjs/testing": 8.1.2
-    "@rollup/plugin-babel": 5.3.0
-    "@rollup/plugin-commonjs": 21.0.1
-    "@rollup/plugin-node-resolve": 13.0.6
-    "@types/express": ^4.17.13
-    "@types/jest": 27.0.2
-    "@types/morgan": ^1
-    express: ^4.17.1
-    jest: 27.3.1
-    morgan: ^1.10.0
-    reflect-metadata: 0.1.13
-    rollup: 2.58.3
-    rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
-    rxjs: 7.4.0
-    winston: ^3.3.3
-  languageName: unknown
-  linkType: soft
-
-"@package/messages@workspace:packages/messages":
-  version: 0.0.0-use.local
-  resolution: "@package/messages@workspace:packages/messages"
-  dependencies:
-    "@babel/core": 7.16.0
-    "@babel/plugin-proposal-decorators": 7.16.0
-    "@babel/plugin-transform-runtime": 7.16.0
-    "@babel/preset-env": 7.16.0
-    "@babel/preset-typescript": 7.16.0
-    "@rollup/plugin-babel": 5.3.0
-    "@rollup/plugin-commonjs": 21.0.1
-    "@rollup/plugin-node-resolve": 13.0.6
-    "@types/jest": 27.0.2
-    jest: 27.3.1
-    rollup: 2.58.3
-    rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
-  languageName: unknown
-  linkType: soft
-
-"@package/pagination@workspace:packages/pagination":
-  version: 0.0.0-use.local
-  resolution: "@package/pagination@workspace:packages/pagination"
-  dependencies:
-    "@babel/core": 7.16.0
-    "@babel/plugin-proposal-decorators": 7.16.0
-    "@babel/plugin-transform-runtime": 7.16.0
-    "@babel/preset-env": 7.16.0
-    "@babel/preset-typescript": 7.16.0
-    "@nestjs/common": ^8.1.1
-    "@nestjs/core": ^8.1.1
-    "@nestjs/testing": 8.1.2
-    "@rollup/plugin-babel": 5.3.0
-    "@rollup/plugin-commonjs": 21.0.1
-    "@rollup/plugin-node-resolve": 13.0.6
-    "@types/express": 4.17.13
-    "@types/jest": 27.0.2
-    express: ^4.17.1
-    jest: 27.3.1
-    jest-marbles: 3.0.1
-    reflect-metadata: ^0.1.13
-    rollup: 2.58.3
-    rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
-    rxjs: ^7.4.0
-  languageName: unknown
-  linkType: soft
-
-"@package/prisma@workspace:packages/prisma":
-  version: 0.0.0-use.local
-  resolution: "@package/prisma@workspace:packages/prisma"
-  dependencies:
-    "@babel/core": 7.16.0
-    "@babel/plugin-proposal-decorators": 7.16.0
-    "@babel/plugin-transform-runtime": 7.16.0
-    "@babel/preset-env": 7.16.0
-    "@babel/preset-typescript": 7.16.0
-    "@nestjs/common": ^8.1.1
-    "@nestjs/core": ^8.1.1
-    "@nestjs/testing": 8.1.2
-    "@prisma/client": ^3.3.0
-    "@rollup/plugin-babel": 5.3.0
-    "@rollup/plugin-commonjs": 21.0.1
-    "@rollup/plugin-node-resolve": 13.0.6
-    "@types/jest": 27.0.2
-    jest: 27.3.1
-    prisma: 3.3.0
-    reflect-metadata: ^0.1.13
-    rollup: 2.58.3
-    rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
-    rxjs: ^7.4.0
-  languageName: unknown
-  linkType: soft
-
 "@prisma/client@npm:3.3.0, @prisma/client@npm:^3.3.0":
   version: 3.3.0
   resolution: "@prisma/client@npm:3.3.0"
@@ -3230,6 +3230,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@service/users@workspace:services/users"
   dependencies:
+    "@motech-development/bootstrap": "workspace:packages/bootstrap"
+    "@motech-development/logger": "workspace:packages/logger"
+    "@motech-development/messages": "workspace:packages/messages"
+    "@motech-development/pagination": "workspace:packages/pagination"
+    "@motech-development/prisma": "workspace:packages/prisma"
     "@nestjs/cli": 8.1.4
     "@nestjs/common": 8.1.1
     "@nestjs/core": 8.1.1
@@ -3237,11 +3242,6 @@ __metadata:
     "@nestjs/platform-express": 8.1.1
     "@nestjs/schematics": 8.0.5
     "@nestjs/testing": 8.1.2
-    "@package/bootstrap": "workspace:packages/bootstrap"
-    "@package/logger": "workspace:packages/logger"
-    "@package/messages": "workspace:packages/messages"
-    "@package/pagination": "workspace:packages/pagination"
-    "@package/prisma": "workspace:packages/prisma"
     "@prisma/client": 3.3.0
     "@types/jest": 27.0.2
     amqp-connection-manager: 3.7.0

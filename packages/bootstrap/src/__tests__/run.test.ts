@@ -6,7 +6,7 @@ import {
 import { logger } from '../bootstrap';
 import { run } from '../run';
 
-jest.mock('@package/logger');
+jest.mock('@motech-development/logger');
 
 describe('run', () => {
   let api: Promise<INestApplication>;

@@ -3,7 +3,7 @@ import { NestFactory } from '@nestjs/core';
 import bootstrap, { logger } from '../bootstrap';
 import { run } from '../run';
 
-jest.mock('@package/logger');
+jest.mock('@motech-development/logger');
 
 jest.mock('@nestjs/core');
 

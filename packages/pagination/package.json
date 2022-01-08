@@ -1,5 +1,5 @@
 {
-  "name": "@package/pagination",
+  "name": "@motech-development/pagination",
   "version": "0.0.0",
   "files": [
     "lib"

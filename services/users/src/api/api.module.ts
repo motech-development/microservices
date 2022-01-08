@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ClientsModule, Transport } from '@nestjs/microservices';
-import { LoggerModule } from '@package/logger';
-import { PaginationModule } from '@package/pagination';
+import { LoggerModule } from '@motech-development/logger';
+import { PaginationModule } from '@motech-development/pagination';
 import ApiController from './api.controller';
 
 @Module({
