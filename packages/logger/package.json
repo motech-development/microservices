@@ -1,6 +1,9 @@
 {
   "name": "@motech-development/logger",
   "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "lib"
   ],
