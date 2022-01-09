@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    name: Release packages
+    name: Packages
 
     runs-on: ubuntu-latest
 
