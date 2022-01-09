@@ -54,9 +54,8 @@ jobs:
       - name: Build packages
         run: yarn package
 
-      # TODO: Enable linting
-      # - name: Run linter
-      #   run: yarn workspace @motech-development/${{ matrix.packages }} lint
+      - name: Run linter
+        run: yarn workspace @motech-development/${{ matrix.packages }} lint
 
       - name: Run tests
         run: yarn workspace @motech-development/${{ matrix.packages }} test-ci
@@ -105,15 +104,24 @@ jobs:
       - name: Generate schema
         run: yarn workspace @service/${{ matrix.services }} generate
 
-      # TODO: Enable linting
-      # - name: Run linter
-      #   run: yarn workspace @service/${{ matrix.services }} lint
+      - name: Run linter
+        run: yarn workspace @service/${{ matrix.services }} lint
 
       # TODO: Enable tests
       # - name: Run tests
       #   run: yarn workspace @service/${{ matrix.services }} test-ci
 
       # TODO: Send results to SonarQube
+      # - name: Set SonarCloud Token
+      #   run: echo "SONAR_TOKEN_NAME=SONAR_TOKEN_SERVICES_${{ matrix.services }}" | tr '[:lower:]' '[:upper:]' >> $GITHUB_ENV
+
+      # - name: SonarCloud Scan
+      #   uses: sonarsource/sonarcloud-github-action@master
+      #   with:
+      #     projectBaseDir: services/${{ matrix.services }}
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     SONAR_TOKEN: ${{ secrets[env.SONAR_TOKEN_NAME] }}
 
       # TODO: Integration tests
 

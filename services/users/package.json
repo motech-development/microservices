@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "generate": "prisma generate",
+    "lint": "eslint \"src\"",
+    "lint-staged": "lint-staged",
     "migrate": "prisma migrate dev",
     "start": "nest start --watch"
   },
@@ -25,12 +27,20 @@
     "rxjs": "7.4.0"
   },
   "devDependencies": {
+    "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base",
     "@nestjs/cli": "8.1.4",
     "@nestjs/schematics": "8.0.5",
     "@nestjs/testing": "8.1.2",
     "@types/jest": "27.0.2",
+    "eslint": "7.32.0",
     "jest": "27.3.1",
+    "lint-staged": "11.2.6",
+    "prettier": "2.4.1",
     "prisma": "3.3.0",
     "source-map-support": "0.5.20"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write",
+    "*.{js,ts}": "eslint --cache --fix"
   }
 }

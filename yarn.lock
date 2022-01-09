@@ -2328,6 +2328,7 @@ __metadata:
     "@babel/plugin-transform-runtime": 7.16.0
     "@babel/preset-env": 7.16.0
     "@babel/preset-typescript": 7.16.0
+    "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@motech-development/logger": "workspace:packages/logger"
     "@nestjs/common": ^8.1.1
     "@nestjs/core": ^8.1.1
@@ -2335,11 +2336,35 @@ __metadata:
     "@rollup/plugin-commonjs": 21.0.1
     "@rollup/plugin-node-resolve": 13.0.6
     "@types/jest": 27.0.2
+    eslint: 7.32.0
     jest: 27.3.1
+    lint-staged: 11.2.6
+    prettier: 2.4.1
     reflect-metadata: 0.1.13
     rollup: 2.58.3
     rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
     rxjs: 7.4.0
+  languageName: unknown
+  linkType: soft
+
+"@motech-development/eslint-config-motech-base@workspace:packages/eslint-config-motech-base":
+  version: 0.0.0-use.local
+  resolution: "@motech-development/eslint-config-motech-base@workspace:packages/eslint-config-motech-base"
+  dependencies:
+    "@typescript-eslint/eslint-plugin": 4.33.0
+    "@typescript-eslint/parser": 4.33.0
+    eslint: 7.32.0
+    eslint-config-airbnb-base: 14.2.1
+    eslint-config-airbnb-typescript: 14.0.1
+    eslint-config-prettier: 8.3.0
+    eslint-import-resolver-node: 0.3.6
+    eslint-plugin-import: 2.25.2
+    eslint-plugin-jest: 25.2.2
+    find-yarn-workspace-root: ^2.0.0
+    lint-staged: 11.2.6
+    prettier: 2.4.1
+  peerDependencies:
+    eslint: ">= 7"
   languageName: unknown
   linkType: soft
 
@@ -2352,6 +2377,7 @@ __metadata:
     "@babel/plugin-transform-runtime": 7.16.0
     "@babel/preset-env": 7.16.0
     "@babel/preset-typescript": 7.16.0
+    "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@nestjs/common": ^8.1.1
     "@nestjs/core": ^8.1.1
     "@nestjs/testing": 8.1.2
@@ -2361,9 +2387,12 @@ __metadata:
     "@types/express": ^4.17.13
     "@types/jest": 27.0.2
     "@types/morgan": ^1
+    eslint: 7.32.0
     express: ^4.17.1
     jest: 27.3.1
+    lint-staged: 11.2.6
     morgan: ^1.10.0
+    prettier: 2.4.1
     reflect-metadata: 0.1.13
     rollup: 2.58.3
     rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
@@ -2381,11 +2410,15 @@ __metadata:
     "@babel/plugin-transform-runtime": 7.16.0
     "@babel/preset-env": 7.16.0
     "@babel/preset-typescript": 7.16.0
+    "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@rollup/plugin-babel": 5.3.0
     "@rollup/plugin-commonjs": 21.0.1
     "@rollup/plugin-node-resolve": 13.0.6
     "@types/jest": 27.0.2
+    eslint: 7.32.0
     jest: 27.3.1
+    lint-staged: 11.2.6
+    prettier: 2.4.1
     rollup: 2.58.3
     rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
   languageName: unknown
@@ -2400,6 +2433,7 @@ __metadata:
     "@babel/plugin-transform-runtime": 7.16.0
     "@babel/preset-env": 7.16.0
     "@babel/preset-typescript": 7.16.0
+    "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@nestjs/common": ^8.1.1
     "@nestjs/core": ^8.1.1
     "@nestjs/testing": 8.1.2
@@ -2408,9 +2442,12 @@ __metadata:
     "@rollup/plugin-node-resolve": 13.0.6
     "@types/express": 4.17.13
     "@types/jest": 27.0.2
+    eslint: 7.32.0
     express: ^4.17.1
     jest: 27.3.1
     jest-marbles: 3.0.1
+    lint-staged: 11.2.6
+    prettier: 2.4.1
     reflect-metadata: ^0.1.13
     rollup: 2.58.3
     rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
@@ -2427,6 +2464,7 @@ __metadata:
     "@babel/plugin-transform-runtime": 7.16.0
     "@babel/preset-env": 7.16.0
     "@babel/preset-typescript": 7.16.0
+    "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@nestjs/common": ^8.1.1
     "@nestjs/core": ^8.1.1
     "@nestjs/testing": 8.1.2
@@ -2435,7 +2473,10 @@ __metadata:
     "@rollup/plugin-commonjs": 21.0.1
     "@rollup/plugin-node-resolve": 13.0.6
     "@types/jest": 27.0.2
+    eslint: 7.32.0
     jest: 27.3.1
+    lint-staged: 11.2.6
+    prettier: 2.4.1
     prisma: 3.3.0
     reflect-metadata: ^0.1.13
     rollup: 2.58.3
@@ -3231,6 +3272,7 @@ __metadata:
   resolution: "@service/users@workspace:services/users"
   dependencies:
     "@motech-development/bootstrap": "workspace:packages/bootstrap"
+    "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@motech-development/logger": "workspace:packages/logger"
     "@motech-development/messages": "workspace:packages/messages"
     "@motech-development/pagination": "workspace:packages/pagination"
@@ -3248,7 +3290,10 @@ __metadata:
     amqplib: 0.8.0
     class-transformer: 0.4.0
     class-validator: 0.13.1
+    eslint: 7.32.0
     jest: 27.3.1
+    lint-staged: 11.2.6
+    prettier: 2.4.1
     prisma: 3.3.0
     reflect-metadata: 0.1.13
     rxjs: 7.4.0
@@ -6746,6 +6791,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"find-yarn-workspace-root@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "find-yarn-workspace-root@npm:2.0.0"
+  dependencies:
+    micromatch: ^4.0.2
+  checksum: fa5ca8f9d08fe7a54ce7c0a5931ff9b7e36f9ee7b9475fb13752bcea80ec6b5f180fa5102d60b376d5526ce924ea3fc6b19301262efa0a5d248dd710f3644242
+  languageName: node
+  linkType: hard
+
 "findup-sync@npm:^4.0.0":
   version: 4.0.0
   resolution: "findup-sync@npm:4.0.0"
@@ -9542,20 +9596,9 @@ __metadata:
     "@commitlint/config-conventional": 13.2.0
     "@qiwi/multi-semantic-release": ^3.17.1
     "@types/node": 14.17.29
-    "@typescript-eslint/eslint-plugin": 4.33.0
-    "@typescript-eslint/parser": 4.33.0
     commitizen: 4.2.4
     cz-conventional-changelog: 3.3.0
-    eslint: 7.32.0
-    eslint-config-airbnb-base: 14.2.1
-    eslint-config-airbnb-typescript: 14.0.1
-    eslint-config-prettier: 8.3.0
-    eslint-import-resolver-node: 0.3.6
-    eslint-plugin-import: 2.25.2
-    eslint-plugin-jest: 25.2.2
     husky: 7.0.4
-    lint-staged: 11.2.6
-    prettier: 2.4.1
     rimraf: 3.0.2
     typescript: 4.4.4
   languageName: unknown
