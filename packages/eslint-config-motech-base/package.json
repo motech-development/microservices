@@ -1,0 +1,38 @@
+{
+  "name": "@motech-development/eslint-config-motech-base",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"index.js\"",
+    "lint-staged": "lint-staged"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-airbnb-typescript": "14.0.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-node": "0.3.6",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-jest": "25.2.2",
+    "find-yarn-workspace-root": "^2.0.0"
+  },
+  "devDependencies": {
+    "lint-staged": "11.2.6",
+    "prettier": "2.4.1"
+  },
+  "peerDependencies": {
+    "eslint": ">= 7"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write",
+    "*.{js,ts}": "eslint --cache --fix"
+  }
+}
