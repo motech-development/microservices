@@ -1,5 +1,6 @@
 {
   "name": "@service/users",
+  "description": "User microservice",
   "version": "0.0.0-development",
   "repository": {
     "type": "git",
