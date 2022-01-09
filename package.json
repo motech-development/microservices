@@ -1,6 +1,7 @@
 {
   "name": "microservices",
   "version": "0.0.0-development",
+  "license": "MIT",
   "packageManager": "yarn@3.1.1",
   "private": true,
   "workspaces": [
