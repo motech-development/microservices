@@ -10,6 +10,7 @@
     "babel.config.js",
     "commitlint.config.js",
     "rollup.config.js",
+    "packages/eslint-config-motech-base/index.js",
     "packages/*/src/**/*",
     "packages/*/babel.config.js",
     "packages/*/rollup.config.js",
