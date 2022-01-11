@@ -2347,7 +2347,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@motech-development/eslint-config-motech-base@workspace:packages/eslint-config-motech-base":
+"@motech-development/eslint-config-motech-base@workspace:^, @motech-development/eslint-config-motech-base@workspace:packages/eslint-config-motech-base":
   version: 0.0.0-use.local
   resolution: "@motech-development/eslint-config-motech-base@workspace:packages/eslint-config-motech-base"
   dependencies:
@@ -9594,6 +9594,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": 13.2.1
     "@commitlint/config-conventional": 13.2.0
+    "@motech-development/eslint-config-motech-base": "workspace:^"
     "@qiwi/multi-semantic-release": ^3.17.1
     "@types/node": 14.17.29
     commitizen: 4.2.4
