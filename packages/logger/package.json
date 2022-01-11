@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/motech-development/microservices/issues"
   },
-  "homepage": "https://github.com/motech-development/microservices/packages/logger#readme",
+  "homepage": "https://github.com/motech-development/microservices/tree/main/packages/logger#readme",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
