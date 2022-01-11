@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/motech-development/microservices/issues"
   },
-  "homepage": "https://github.com/motech-development/microservices/packages/prisma#readme",
+  "homepage": "https://github.com/motech-development/microservices/tree/main/packages/prisma#readme",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
