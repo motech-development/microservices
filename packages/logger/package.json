@@ -26,8 +26,8 @@
     "lint": "eslint \"src\"",
     "lint-staged": "lint-staged",
     "package": "run build",
-    "postbuild": "run -T tsc --project tsconfig.build.json --emitDeclarationOnly",
-    "prebuild": "run -T rimraf ./lib",
+    "postbuild": "tsc --project tsconfig.build.json --emitDeclarationOnly",
+    "prebuild": "rimraf ./lib",
     "test": "jest --watch",
     "test-ci": "jest --coverage"
   },
@@ -58,8 +58,10 @@
     "jest": "27.3.1",
     "lint-staged": "11.2.6",
     "prettier": "2.4.1",
+    "rimraf": "3.0.2",
     "rollup": "2.58.3",
-    "rollup-plugin-exclude-dependencies-from-bundle": "1.1.22"
+    "rollup-plugin-exclude-dependencies-from-bundle": "1.1.22",
+    "typescript": "4.4.4"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write",
