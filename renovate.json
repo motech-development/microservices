@@ -2,6 +2,12 @@
   "extends": [
     "config:base"
   ],
+  "packageRules": [
+    {
+      "automerge": true,
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+    }
+  ],
   "prCreation": "not-pending",
   "rebaseWhen": "behind-base-branch",
   "stabilityDays": 30,
