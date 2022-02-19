@@ -3553,10 +3553,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.17.29":
-  version: 14.17.29
-  resolution: "@types/node@npm:14.17.29"
-  checksum: 5441e505a6287c7d36f083be95b39ef93238bb4bdb6e2c934304cc9b0f5ac33e7d552c8047824cbd274fcb6f5554703a102c039c8a5306d2acf4ebc3c3f7298b
+"@types/node@npm:14.18.12":
+  version: 14.18.12
+  resolution: "@types/node@npm:14.18.12"
+  checksum: 8a0273caa0584020adb8802784fc7d4f18f05e6c205335b7f3818a91d6b0c22736b9f51da3428d5bc54076ad47f1a4d6d57990a3ce8489a520ac66b2b3ff24bc
   languageName: node
   linkType: hard
 
@@ -9618,7 +9618,7 @@ __metadata:
     "@commitlint/config-conventional": 13.2.0
     "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@qiwi/multi-semantic-release": ^3.17.1
-    "@types/node": 14.17.29
+    "@types/node": 14.18.12
     commitizen: 4.2.4
     cz-conventional-changelog: 3.3.0
     eslint: 7.32.0
