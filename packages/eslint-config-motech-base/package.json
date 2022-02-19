@@ -32,7 +32,7 @@
     "eslint-config-prettier": "8.3.0",
     "eslint-import-resolver-node": "0.3.6",
     "eslint-plugin-import": "2.25.4",
-    "eslint-plugin-jest": "25.2.2",
+    "eslint-plugin-jest": "25.7.0",
     "find-yarn-workspace-root": "^2.0.0"
   },
   "devDependencies": {
