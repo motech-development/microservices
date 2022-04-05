@@ -45,7 +45,7 @@
     "@babel/preset-env": "7.16.0",
     "@babel/preset-typescript": "7.16.0",
     "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base",
-    "@rollup/plugin-babel": "5.3.0",
+    "@rollup/plugin-babel": "5.3.1",
     "@rollup/plugin-commonjs": "21.0.1",
     "@rollup/plugin-node-resolve": "13.0.6",
     "@types/jest": "27.0.2",
