@@ -31,7 +31,7 @@
     "@nestjs/microservices": "8.1.1",
     "@nestjs/platform-express": "8.1.1",
     "@prisma/client": "3.3.0",
-    "amqp-connection-manager": "3.7.0",
+    "amqp-connection-manager": "3.9.0",
     "amqplib": "0.8.0",
     "class-transformer": "0.4.0",
     "class-validator": "0.13.2",

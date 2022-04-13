@@ -3490,7 +3490,7 @@ __metadata:
     "@nestjs/testing": 8.1.2
     "@prisma/client": 3.3.0
     "@types/jest": 27.4.1
-    amqp-connection-manager: 3.7.0
+    amqp-connection-manager: 3.9.0
     amqplib: 0.8.0
     class-transformer: 0.4.0
     class-validator: 0.13.2
@@ -4361,14 +4361,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"amqp-connection-manager@npm:3.7.0":
-  version: 3.7.0
-  resolution: "amqp-connection-manager@npm:3.7.0"
+"amqp-connection-manager@npm:3.9.0":
+  version: 3.9.0
+  resolution: "amqp-connection-manager@npm:3.9.0"
   dependencies:
     promise-breaker: ^5.0.0
   peerDependencies:
     amqplib: "*"
-  checksum: 1ad0e29e80dc7290d5b71b231074cd650b13255e9dfb9c347cc74ef918cd03f6201230488734224a2a7ec30e859cf63fc067cae4de7373f82b041dbfa148cb7e
+  checksum: c1091e2ad36c7f4568ea49f6cd9bc2fcafca12cda209c733587c2b82b82a64efd7f2357511124fa325cd3d8ecd27eedef97c6d62ccdce02e319432108c5b6b89
   languageName: node
   linkType: hard
 
