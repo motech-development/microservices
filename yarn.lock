@@ -2541,7 +2541,7 @@ __metadata:
     "@nestjs/common": ^8.1.1
     "@nestjs/core": ^8.1.1
     "@rollup/plugin-babel": 5.3.1
-    "@rollup/plugin-commonjs": 21.0.1
+    "@rollup/plugin-commonjs": 21.1.0
     "@rollup/plugin-node-resolve": 13.0.6
     "@types/jest": 27.4.1
     eslint: 7.32.0
@@ -2593,7 +2593,7 @@ __metadata:
     "@nestjs/core": ^8.1.1
     "@nestjs/testing": 8.4.4
     "@rollup/plugin-babel": 5.3.1
-    "@rollup/plugin-commonjs": 21.0.1
+    "@rollup/plugin-commonjs": 21.1.0
     "@rollup/plugin-node-resolve": 13.0.6
     "@types/express": ^4.17.13
     "@types/jest": 27.4.1
@@ -2625,7 +2625,7 @@ __metadata:
     "@babel/preset-typescript": 7.16.0
     "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@rollup/plugin-babel": 5.3.1
-    "@rollup/plugin-commonjs": 21.0.1
+    "@rollup/plugin-commonjs": 21.1.0
     "@rollup/plugin-node-resolve": 13.0.6
     "@types/jest": 27.4.1
     eslint: 7.32.0
@@ -2653,7 +2653,7 @@ __metadata:
     "@nestjs/core": ^8.1.1
     "@nestjs/testing": 8.4.4
     "@rollup/plugin-babel": 5.3.1
-    "@rollup/plugin-commonjs": 21.0.1
+    "@rollup/plugin-commonjs": 21.1.0
     "@rollup/plugin-node-resolve": 13.0.6
     "@types/express": 4.17.13
     "@types/jest": 27.4.1
@@ -2687,7 +2687,7 @@ __metadata:
     "@nestjs/testing": 8.4.4
     "@prisma/client": ^3.3.0
     "@rollup/plugin-babel": 5.3.1
-    "@rollup/plugin-commonjs": 21.0.1
+    "@rollup/plugin-commonjs": 21.1.0
     "@rollup/plugin-node-resolve": 13.0.6
     "@types/jest": 27.4.1
     eslint: 7.32.0
@@ -3402,9 +3402,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-commonjs@npm:21.0.1":
-  version: 21.0.1
-  resolution: "@rollup/plugin-commonjs@npm:21.0.1"
+"@rollup/plugin-commonjs@npm:21.1.0":
+  version: 21.1.0
+  resolution: "@rollup/plugin-commonjs@npm:21.1.0"
   dependencies:
     "@rollup/pluginutils": ^3.1.0
     commondir: ^1.0.1
@@ -3415,7 +3415,7 @@ __metadata:
     resolve: ^1.17.0
   peerDependencies:
     rollup: ^2.38.3
-  checksum: 3e56be58c72d655face6f361f85923ddcc3cc07760b5a3a91cfc728115dfed358fc595781148c512d53a03be8c703133379f228e78fd2aed8655fae9d83800b6
+  checksum: e8280f4b6192729f2bdf878c48c451dc441075f2a12f22c688393f48a6b95e8ff83caaacc3df4eb1d81516e08a0e3a669213632879910d85dd630b37bb284df7
   languageName: node
   linkType: hard
 
