@@ -41,7 +41,7 @@
   "devDependencies": {
     "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base",
     "@nestjs/cli": "8.2.5",
-    "@nestjs/schematics": "8.0.5",
+    "@nestjs/schematics": "8.0.11",
     "@nestjs/testing": "8.4.4",
     "@types/jest": "27.4.1",
     "eslint": "7.32.0",
