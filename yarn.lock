@@ -2542,7 +2542,7 @@ __metadata:
     "@nestjs/core": ^8.1.1
     "@rollup/plugin-babel": 5.3.1
     "@rollup/plugin-commonjs": 21.1.0
-    "@rollup/plugin-node-resolve": 13.0.6
+    "@rollup/plugin-node-resolve": 13.3.0
     "@types/jest": 27.4.1
     eslint: 7.32.0
     jest: 27.5.1
@@ -2594,7 +2594,7 @@ __metadata:
     "@nestjs/testing": 8.4.4
     "@rollup/plugin-babel": 5.3.1
     "@rollup/plugin-commonjs": 21.1.0
-    "@rollup/plugin-node-resolve": 13.0.6
+    "@rollup/plugin-node-resolve": 13.3.0
     "@types/express": ^4.17.13
     "@types/jest": 27.4.1
     "@types/morgan": ^1
@@ -2626,7 +2626,7 @@ __metadata:
     "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@rollup/plugin-babel": 5.3.1
     "@rollup/plugin-commonjs": 21.1.0
-    "@rollup/plugin-node-resolve": 13.0.6
+    "@rollup/plugin-node-resolve": 13.3.0
     "@types/jest": 27.4.1
     eslint: 7.32.0
     jest: 27.5.1
@@ -2654,7 +2654,7 @@ __metadata:
     "@nestjs/testing": 8.4.4
     "@rollup/plugin-babel": 5.3.1
     "@rollup/plugin-commonjs": 21.1.0
-    "@rollup/plugin-node-resolve": 13.0.6
+    "@rollup/plugin-node-resolve": 13.3.0
     "@types/express": 4.17.13
     "@types/jest": 27.4.1
     eslint: 7.32.0
@@ -2688,7 +2688,7 @@ __metadata:
     "@prisma/client": ^3.3.0
     "@rollup/plugin-babel": 5.3.1
     "@rollup/plugin-commonjs": 21.1.0
-    "@rollup/plugin-node-resolve": 13.0.6
+    "@rollup/plugin-node-resolve": 13.3.0
     "@types/jest": 27.4.1
     eslint: 7.32.0
     jest: 27.5.1
@@ -3419,19 +3419,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-node-resolve@npm:13.0.6":
-  version: 13.0.6
-  resolution: "@rollup/plugin-node-resolve@npm:13.0.6"
+"@rollup/plugin-node-resolve@npm:13.3.0":
+  version: 13.3.0
+  resolution: "@rollup/plugin-node-resolve@npm:13.3.0"
   dependencies:
     "@rollup/pluginutils": ^3.1.0
     "@types/resolve": 1.17.1
-    builtin-modules: ^3.1.0
     deepmerge: ^4.2.2
+    is-builtin-module: ^3.1.0
     is-module: ^1.0.0
     resolve: ^1.19.0
   peerDependencies:
     rollup: ^2.42.0
-  checksum: da304025ca898f3ad70e3a24d788634298f2ca6e139517adff43f27ea9cf821af3ee3530ca6f8abaf7e697294b59803837cd8f0ec22e3b1d34d3411c39e9a32c
+  checksum: ec5418e6b3c23a9e30683056b3010e9d325316dcfae93fbc673ae64dad8e56a2ce761c15c48f5e2dcfe0c822fdc4a4905ee6346e3dcf90603ba2260afef5a5e6
   languageName: node
   linkType: hard
 
@@ -5113,6 +5113,13 @@ __metadata:
     base64-js: ^1.3.1
     ieee754: ^1.1.13
   checksum: e2cf8429e1c4c7b8cbd30834ac09bd61da46ce35f5c22a78e6c2f04497d6d25541b16881e30a019c6fd3154150650ccee27a308eff3e26229d788bbdeb08ab84
+  languageName: node
+  linkType: hard
+
+"builtin-modules@npm:^3.0.0":
+  version: 3.3.0
+  resolution: "builtin-modules@npm:3.3.0"
+  checksum: db021755d7ed8be048f25668fe2117620861ef6703ea2c65ed2779c9e3636d5c3b82325bd912244293959ff3ae303afa3471f6a15bf5060c103e4cc3a839749d
   languageName: node
   linkType: hard
 
@@ -8237,6 +8244,15 @@ __metadata:
     call-bind: ^1.0.2
     has-tostringtag: ^1.0.0
   checksum: c03b23dbaacadc18940defb12c1c0e3aaece7553ef58b162a0f6bba0c2a7e1551b59f365b91e00d2dbac0522392d576ef322628cb1d036a0fe51eb466db67222
+  languageName: node
+  linkType: hard
+
+"is-builtin-module@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "is-builtin-module@npm:3.1.0"
+  dependencies:
+    builtin-modules: ^3.0.0
+  checksum: f1e5dd2cd5f252d4d799b20a0c8c4f7e9c399c4d141749af76ca0121058d4062c3015d026f1b1409dd3d2a4ddfb9b15cf6eb9c370fed53fea8652ce35b5e95cb
   languageName: node
   linkType: hard
 
