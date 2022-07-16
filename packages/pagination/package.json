@@ -50,7 +50,7 @@
     "@rollup/plugin-commonjs": "21.1.0",
     "@rollup/plugin-node-resolve": "13.3.0",
     "@types/express": "4.17.13",
-    "@types/jest": "27.4.1",
+    "@types/jest": "27.5.2",
     "eslint": "7.32.0",
     "jest": "27.5.1",
     "jest-marbles": "3.0.2",
