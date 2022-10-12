@@ -2674,7 +2674,7 @@ __metadata:
     eslint: 7.32.0
     express: ^4.17.1
     jest: 27.5.1
-    jest-marbles: 3.0.2
+    jest-marbles: 3.0.3
     lint-staged: 11.2.6
     prettier: 2.7.1
     reflect-metadata: ^0.1.13
@@ -9059,7 +9059,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-diff@npm:^27.4.2, jest-diff@npm:^27.5.1":
+"jest-diff@npm:^27.5.1":
   version: 27.5.1
   resolution: "jest-diff@npm:27.5.1"
   dependencies:
@@ -9188,19 +9188,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-marbles@npm:3.0.2":
-  version: 3.0.2
-  resolution: "jest-marbles@npm:3.0.2"
-  dependencies:
-    jest-diff: ^27.4.2
-    jest-matcher-utils: ^27.4.2
+"jest-marbles@npm:3.0.3":
+  version: 3.0.3
+  resolution: "jest-marbles@npm:3.0.3"
   peerDependencies:
     rxjs: ^7.0.0
-  checksum: 46108a8f23e751b8cb7d9a7b393a1f44358223a1a3f6cca79b9a828021dd2e02c71b6745c38f3df4b7327c13949af4d2e2fec5d3ce31181be46dee96009ff16b
+  checksum: 96f0c2218ad3944f7facef8eec8ddfd28ad913db88cac9cf38725859997f13c9181ba2cba9d78e1f1000c3238258f8772ad3cfa7743c04247b39728ac3937650
   languageName: node
   linkType: hard
 
-"jest-matcher-utils@npm:^27.0.0, jest-matcher-utils@npm:^27.4.2, jest-matcher-utils@npm:^27.5.1":
+"jest-matcher-utils@npm:^27.0.0, jest-matcher-utils@npm:^27.5.1":
   version: 27.5.1
   resolution: "jest-matcher-utils@npm:27.5.1"
   dependencies:
