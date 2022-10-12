@@ -31,7 +31,7 @@
     "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base",
     "@qiwi/multi-semantic-release": "6.5.1",
     "@types/node": "14.18.12",
-    "commitizen": "4.2.4",
+    "commitizen": "4.2.5",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.32.0",
     "husky": "8.0.1",
