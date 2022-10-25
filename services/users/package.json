@@ -36,7 +36,7 @@
     "class-transformer": "0.5.1",
     "class-validator": "0.13.2",
     "reflect-metadata": "0.1.13",
-    "rxjs": "7.5.5"
+    "rxjs": "7.5.7"
   },
   "devDependencies": {
     "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base",
