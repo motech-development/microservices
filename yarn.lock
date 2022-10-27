@@ -2682,7 +2682,7 @@ __metadata:
     rollup: 2.79.1
     rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
     rxjs: 7.5.7
-    typescript: 4.7.4
+    typescript: 4.8.3
   languageName: unknown
   linkType: soft
 
@@ -2702,7 +2702,7 @@ __metadata:
     find-yarn-workspace-root: ^2.0.0
     lint-staged: 11.2.6
     prettier: 2.7.1
-    typescript: 4.7.4
+    typescript: 4.8.3
   peerDependencies:
     eslint: ">= 7"
   languageName: unknown
@@ -2738,7 +2738,7 @@ __metadata:
     rollup: 2.79.1
     rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
     rxjs: 7.5.7
-    typescript: 4.7.4
+    typescript: 4.8.3
     winston: ^3.3.3
   languageName: unknown
   linkType: soft
@@ -2764,7 +2764,7 @@ __metadata:
     rimraf: 3.0.2
     rollup: 2.79.1
     rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
-    typescript: 4.7.4
+    typescript: 4.8.3
   languageName: unknown
   linkType: soft
 
@@ -2797,7 +2797,7 @@ __metadata:
     rollup: 2.79.1
     rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
     rxjs: ^7.4.0
-    typescript: 4.7.4
+    typescript: 4.8.3
   languageName: unknown
   linkType: soft
 
@@ -2829,7 +2829,7 @@ __metadata:
     rollup: 2.79.1
     rollup-plugin-exclude-dependencies-from-bundle: 1.1.22
     rxjs: ^7.4.0
-    typescript: 4.7.4
+    typescript: 4.8.3
   languageName: unknown
   linkType: soft
 
@@ -3768,7 +3768,7 @@ __metadata:
     reflect-metadata: 0.1.13
     rxjs: 7.5.7
     source-map-support: 0.5.21
-    typescript: 4.7.4
+    typescript: 4.8.3
   languageName: unknown
   linkType: soft
 
@@ -10567,7 +10567,7 @@ __metadata:
     cz-conventional-changelog: 3.3.0
     eslint: 7.32.0
     husky: 8.0.1
-    typescript: 4.7.4
+    typescript: 4.8.3
   languageName: unknown
   linkType: soft
 
@@ -14218,6 +14218,16 @@ typescript@^4.4.3:
   languageName: node
   linkType: hard
 
+"typescript@npm:4.8.3":
+  version: 4.8.3
+  resolution: "typescript@npm:4.8.3"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 8286a5edcaf3d68e65c451aa1e7150ad1cf53ee0813c07ec35b7abdfdb10f355ecaa13c6a226a694ae7a67785fd7eeebf89f845da0b4f7e4a35561ddc459aba0
+  languageName: node
+  linkType: hard
+
 "typescript@patch:typescript@4.7.4#~builtin<compat/typescript>":
   version: 4.7.4
   resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=a1c5e5"
@@ -14225,6 +14235,16 @@ typescript@^4.4.3:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 9096d8f6c16cb80ef3bf96fcbbd055bf1c4a43bd14f3b7be45a9fbe7ada46ec977f604d5feed3263b4f2aa7d4c7477ce5f9cd87de0d6feedec69a983f3a4f93e
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@4.8.3#~builtin<compat/typescript>":
+  version: 4.8.3
+  resolution: "typescript@patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=a1c5e5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 2222d2382fb3146089b1d27ce2b55e9d1f99cc64118f1aba75809b693b856c5d3c324f052f60c75b577947fc538bc1c27bad0eb76cbdba9a63a253489504ba7e
   languageName: node
   linkType: hard
 
