@@ -2679,6 +2679,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lukeed/csprng@npm:^1.0.0":
+  version: 1.1.0
+  resolution: "@lukeed/csprng@npm:1.1.0"
+  checksum: 926f5f7fc629470ca9a8af355bfcd0271d34535f7be3890f69902432bddc3262029bb5dbe9025542cf6c9883d878692eef2815fc2f3ba5b92e9da1f9eba2e51b
+  languageName: node
+  linkType: hard
+
 "@manypkg/find-root@npm:^1.1.0":
   version: 1.1.0
   resolution: "@manypkg/find-root@npm:1.1.0"
@@ -2717,7 +2724,7 @@ __metadata:
     "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@motech-development/logger": "workspace:packages/logger"
     "@nestjs/common": ^8.1.1
-    "@nestjs/core": ^8.1.1
+    "@nestjs/core": ^9.0.0
     "@rollup/plugin-babel": 5.3.1
     "@rollup/plugin-commonjs": 21.1.0
     "@rollup/plugin-node-resolve": 13.3.0
@@ -2768,7 +2775,7 @@ __metadata:
     "@babel/preset-typescript": 7.18.6
     "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@nestjs/common": ^8.1.1
-    "@nestjs/core": ^8.1.1
+    "@nestjs/core": ^9.0.0
     "@nestjs/testing": 8.4.7
     "@rollup/plugin-babel": 5.3.1
     "@rollup/plugin-commonjs": 21.1.0
@@ -2828,7 +2835,7 @@ __metadata:
     "@babel/preset-typescript": 7.18.6
     "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@nestjs/common": ^8.1.1
-    "@nestjs/core": ^8.1.1
+    "@nestjs/core": ^9.0.0
     "@nestjs/testing": 8.4.7
     "@rollup/plugin-babel": 5.3.1
     "@rollup/plugin-commonjs": 21.1.0
@@ -2861,7 +2868,7 @@ __metadata:
     "@babel/preset-typescript": 7.18.6
     "@motech-development/eslint-config-motech-base": "workspace:packages/eslint-config-motech-base"
     "@nestjs/common": ^8.1.1
-    "@nestjs/core": ^8.1.1
+    "@nestjs/core": ^9.0.0
     "@nestjs/testing": 8.4.7
     "@prisma/client": ^3.3.0
     "@rollup/plugin-babel": 5.3.1
@@ -2964,9 +2971,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/core@npm:8.4.7":
-  version: 8.4.7
-  resolution: "@nestjs/core@npm:8.4.7"
+"@nestjs/core@npm:9.0.5":
+  version: 9.0.5
+  resolution: "@nestjs/core@npm:9.0.5"
   dependencies:
     "@nuxtjs/opencollective": 0.3.2
     fast-safe-stringify: 2.1.1
@@ -2976,10 +2983,10 @@ __metadata:
     tslib: 2.4.0
     uuid: 8.3.2
   peerDependencies:
-    "@nestjs/common": ^8.0.0
-    "@nestjs/microservices": ^8.0.0
-    "@nestjs/platform-express": ^8.0.0
-    "@nestjs/websockets": ^8.0.0
+    "@nestjs/common": ^9.0.0
+    "@nestjs/microservices": ^9.0.0
+    "@nestjs/platform-express": ^9.0.0
+    "@nestjs/websockets": ^9.0.0
     reflect-metadata: ^0.1.12
     rxjs: ^7.1.0
   peerDependenciesMeta:
@@ -2989,26 +2996,25 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 58d18b04e03cdae4b06e06f1a60705cdbe2e81824e0a85d0be422cf8dbd39c263287196b85939718659d7eeedc2856f29744487931dbe5c2695fcd374a5fbe40
+  checksum: 34cb9dfb8f57a2e0ed42406f95a99d8264316e404d28dd2629ae47896795623a2a0c89b9105d588bddd37417905083418af869a02df5f74fc50c742a3084c61f
   languageName: node
   linkType: hard
 
-"@nestjs/core@npm:^8.1.1":
-  version: 8.1.1
-  resolution: "@nestjs/core@npm:8.1.1"
+"@nestjs/core@npm:^9.0.0":
+  version: 9.4.2
+  resolution: "@nestjs/core@npm:9.4.2"
   dependencies:
     "@nuxtjs/opencollective": 0.3.2
     fast-safe-stringify: 2.1.1
     iterare: 1.2.1
-    object-hash: 2.2.0
     path-to-regexp: 3.2.0
-    tslib: 2.3.1
-    uuid: 8.3.2
+    tslib: 2.5.2
+    uid: 2.0.2
   peerDependencies:
-    "@nestjs/common": ^8.0.0
-    "@nestjs/microservices": ^8.0.0
-    "@nestjs/platform-express": ^8.0.0
-    "@nestjs/websockets": ^8.0.0
+    "@nestjs/common": ^9.0.0
+    "@nestjs/microservices": ^9.0.0
+    "@nestjs/platform-express": ^9.0.0
+    "@nestjs/websockets": ^9.0.0
     reflect-metadata: ^0.1.12
     rxjs: ^7.1.0
   peerDependenciesMeta:
@@ -3018,7 +3024,7 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: ba74fd8c97877890903cd808baee03382418789ba34895994c741e2b2e4a89b9a84daf7dede8fece27722f8a5d5a3cc1f5d5378beb0813e4d57c56c08a90f11b
+  checksum: 2e8e62828c7dc8bd32574e59f2174458b534c4a9228d8a760ab629dd7f27cd0c8edd0fe21922aa63f07266b40ea49a090e59590a47f114213ed753066c0eb5b3
   languageName: node
   linkType: hard
 
@@ -3798,7 +3804,7 @@ __metadata:
     "@motech-development/prisma": "workspace:packages/prisma"
     "@nestjs/cli": 8.2.8
     "@nestjs/common": 8.4.7
-    "@nestjs/core": 8.4.7
+    "@nestjs/core": 9.0.5
     "@nestjs/microservices": 8.4.7
     "@nestjs/platform-express": 8.4.7
     "@nestjs/schematics": 8.0.11
@@ -11442,13 +11448,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object-hash@npm:2.2.0":
-  version: 2.2.0
-  resolution: "object-hash@npm:2.2.0"
-  checksum: 55ba841e3adce9c4f1b9b46b41983eda40f854e0d01af2802d3ae18a7085a17168d6b81731d43fdf1d6bcbb3c9f9c56d22c8fea992203ad90a38d7d919bc28f1
-  languageName: node
-  linkType: hard
-
 "object-hash@npm:3.0.0":
   version: 3.0.0
   resolution: "object-hash@npm:3.0.0"
@@ -14122,6 +14121,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:2.5.2":
+  version: 2.5.2
+  resolution: "tslib@npm:2.5.2"
+  checksum: 4d3c1e238b94127ed0e88aa0380db3c2ddae581dc0f4bae5a982345e9f50ee5eda90835b8bfba99b02df10a5734470be197158c36f9129ac49fdc14a6a9da222
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.8.1, tslib@npm:^1.9.0":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
@@ -14313,6 +14319,15 @@ typescript@^4.4.3:
   bin:
     uglifyjs: bin/uglifyjs
   checksum: 0330eb11a36f4181b6d9a00336355989bfad9dd2203049fc63a59454b0d12337612272ad011bc571b9a382bf74d829ca20409ebfe089e38edb26cfc06bfa2cc9
+  languageName: node
+  linkType: hard
+
+"uid@npm:2.0.2":
+  version: 2.0.2
+  resolution: "uid@npm:2.0.2"
+  dependencies:
+    "@lukeed/csprng": ^1.0.0
+  checksum: 98aabddcd6fe46f9b331b0378a93ee9cc51474348ada02006df9d10b4abc783ed596748ed9f20d7f6c5ff395dbcd1e764a65a68db6f39a31c95ae85ef13fe979
   languageName: node
   linkType: hard
 
